@@ -1,0 +1,32 @@
+/* Fase Extra - estilos globais */
+:root{--fundo:#EEEAF6;--tinta:#23204A;--roxo:#3A2F7A;--rosa:#E0457B;--verde:#1F9E9A;--ouro:#F5B83D;--branco:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Nunito Sans",Arial,sans-serif;font-size:1.0625rem;line-height:1.65;color:var(--tinta);background:var(--fundo)}
+h1,h2,.marca,.nome{font-family:"Bricolage Grotesque",Arial,sans-serif;line-height:1.15}
+.topo{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 5%;background:var(--roxo)}
+.marca{font-size:1.6rem;font-weight:800;color:var(--ouro);text-decoration:none}
+nav ul{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:.45rem .9rem;border-radius:.5rem;color:var(--branco);text-decoration:none;font-weight:700}
+nav a:hover{background:rgba(255,255,255,.15)}
+nav a[aria-current="page"]{background:var(--rosa)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--ouro);outline-offset:2px}
+main{max-width:70rem;margin:0 auto;padding:2.5rem 5% 3rem}
+.hero{padding:2rem 0 2.5rem}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800;margin:0 0 1rem;max-width:18ch}
+h2{font-size:1.7rem;font-weight:600;margin:2rem 0 .5rem}
+.lead{font-size:1.25rem;max-width:60ch}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.5rem;list-style:none;padding:0;margin:1.5rem 0 0}
+.destaque{display:flex;flex-direction:column;gap:.4rem;height:100%;color:inherit;text-decoration:none}
+.destaque img{width:100%;height:auto;border-radius:1rem;border:3px solid var(--tinta)}
+.destaque .nome{font-size:1.5rem;font-weight:800}
+.destaque:hover .nome{color:var(--rosa)}
+.texto{max-width:46rem}
+.lista{padding-left:1.2rem}
+.lista li{margin-bottom:.6rem}
+form{display:grid;gap:.4rem;max-width:32rem;margin:1.5rem 0}
+label{font-weight:700;margin-top:.6rem}
+input,textarea{padding:.7rem;border:2px solid var(--tinta);border-radius:.5rem;font:inherit;background:var(--branco)}
+button{margin-top:1rem;padding:.8rem 1.4rem;border:0;border-radius:.5rem;background:var(--rosa);color:var(--branco);font:inherit;font-weight:700;cursor:pointer}
+button:hover{background:var(--roxo)}
+footer{padding:1.5rem 5%;background:var(--tinta);color:var(--branco);text-align:center;font-size:.95rem}
+footer p{margin:0}
